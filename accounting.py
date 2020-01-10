@@ -36,17 +36,16 @@ def analyze_order(clean_list):
 
   return None
     
+
 #get order history from a text file
 order_log = open("customer-orders.txt")
 
-for line in order_log: #read each line in the order_log 
+#read each line in the order_log
+for line in order_log:  
   parsed_order = collect_order(line)
   with_balance = analyze_order(parsed_order)
 
-
-#identify_underpaid_orders(order_dictionary)
-# customer_order = parse_customer_orders(order_log)
-# print(customer_order)
+#PROBLEM STATEMENT SAMPLE CODE BELOW...
 
 # melon_cost = 1.00
 
